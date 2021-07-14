@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Prishtina Explorer</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="maps">Maps</string>
+    <string name="explore_with_google_maps">Explore with google maps</string>
+    <string name="what_visitors_are_saying">What visitors are saying</string>
+    <string name="review_summary">Review Summary</string>
+    <string name="post">Post</string>
+    <string name="leave_a_review">Leave a review...</string>
+    <string name="textview">TextView</string>
+    <string name="read">read</string>
+    <string name="username">Username</string>
+    <string name="live_chat_with_the_locals">Live chat with the locals</string>
+    <string name="explore_prishtina_s_history_with_google_maps">Explore Prishtina\'s history with Google Maps</string>
+    <string name="germia">Germia</string>
+    <string name="live_chat">Live chat</string>
+</resources>

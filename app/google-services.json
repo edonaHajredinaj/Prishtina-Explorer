@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "655143072321",
+    "project_id": "prishtina-explorer",
+    "storage_bucket": "prishtina-explorer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:655143072321:android:0dbcd46c7b3ea145ec4cc0",
+        "android_client_info": {
+          "package_name": "com.challenge.prishtinaexplorer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "655143072321-hplldfj315h1aud4a1fft8tflb0q292e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAm5pSB3IyM_lPeBu7zR1PdYag6XarOelw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "655143072321-hplldfj315h1aud4a1fft8tflb0q292e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
