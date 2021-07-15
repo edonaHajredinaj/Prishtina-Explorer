@@ -8,22 +8,22 @@
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="NEWBORN"
+        android:layout_width="357dp"
+        android:layout_height="77dp"
+        android:text="@string/the_national_library_of_kosovo_pjet_r_bogdani"
+        android:textAlignment="center"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025" />
+        app:layout_constraintVertical_bias="0.027" />
 
     <ScrollView
         android:id="@+id/scrollView3"
-        android:layout_width="392dp"
-        android:layout_height="193dp"
+        android:layout_width="391dp"
+        android:layout_height="170dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -37,10 +37,11 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/cathedralTextView"
                 android:layout_width="match_parent"
                 android:layout_height="509dp"
-                android:text="The National Library of Kosovo is the highest library institution in Kosovo established by the Assembly and is located in Pristina. The mission of the library is to collect, preserve, promote and make accessible the documentary and intellectual heritage of Kosovo. It holds exhibitions and holds an archive of national newspapers. The library also provides a number of other services. It is known for its unique history, and the style of the building designed by Croatian architect Andrija Mutnjaković, followed by controversies about the outside appearance of it."
+                android:text="@string/the_national_library_of_kosovo_is_the_highest_library_institution_in_kosovo_established_by_the_assembly_and_is_located_in_pristina_the_mission_of_the_library_is_to_collect_preserve_promote_and_make_accessible_the_documentary_and_intellectual_heritage_of_kosovo_it_holds_exhibitions_and_holds_an_archive_of_national_newspapers_the_library_also_provides_a_number_of_other_services_it_is_known_for_its_unique_history_and_the_style_of_the_building_designed_by_croatian_architect_andrija_mutnjakovi_followed_by_controversies_about_the_outside_appearance_of_it"
+                android:textAlignment="viewStart"
                 android:textSize="20sp" />
         </LinearLayout>
     </ScrollView>
@@ -49,12 +50,12 @@
         android:id="@+id/button13"
         android:layout_width="124dp"
         android:layout_height="46dp"
-        android:layout_marginBottom="32dp"
-        android:onClick="liveChat"
-        android:text="Live chat"
+        android:layout_marginBottom="20dp"
+        android:onClick="readText"
+        android:text="@string/read_text"
         app:layout_constraintBottom_toTopOf="@+id/scrollView3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
         app:layout_constraintVertical_bias="0.333" />
@@ -64,7 +65,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="20dp"
         android:onClick="maps"
         android:text="open in Maps"
         app:layout_constraintBottom_toTopOf="@+id/scrollView3"

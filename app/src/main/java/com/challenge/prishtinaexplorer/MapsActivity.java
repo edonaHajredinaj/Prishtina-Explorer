@@ -1,8 +1,8 @@
 package com.challenge.prishtinaexplorer;
 
-import androidx.fragment.app.FragmentActivity;
-
 import android.os.Bundle;
+
+import androidx.fragment.app.FragmentActivity;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -59,10 +59,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng museum = new LatLng(42.666891, 21.1568192);
         mMap.addMarker(new MarkerOptions().position(museum).title("Kosovo Museum"));
 
-        LatLng gallery = new LatLng(42.6570673,21.161722);
+        LatLng gallery = new LatLng(42.6570673, 21.161722);
         mMap.addMarker(new MarkerOptions().position(gallery).title("The National Gallery of Kosovo"));
 
-        LatLng ethnoMuseum = new LatLng(42.6686568,21.1657813);
+        LatLng ethnoMuseum = new LatLng(42.6686568, 21.1657813);
         mMap.addMarker(new MarkerOptions().position(ethnoMuseum).title("Ethnographic Museum"));
 
         //mMap.moveCamera(CameraUpdateFactory.newLatLng(newborn));

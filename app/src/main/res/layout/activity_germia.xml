@@ -36,7 +36,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView13"
+                android:id="@+id/germiaTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Germia is a regional park located in the northeast of Pristina, Kosovo, and covers an area of 62 square kilometres. This mountain massif is a part of the Rhodope Mountains, which lie from the Black Mountain of Skopje to Kopaonik mountains. Its highest point, Butos Peak, is 1050 meters above sea level and its lowest 663 meters above sea level. Due to its geographical position and climate conditions, Germia massif has a rich fauna with 63 species of animals and a variety of about 600 species of flora. In 1987, the &quot;Germia&quot; complex was taken under protection by Pristina's Municipal Assembly in the category of the Regional Nature Park and is now managed by the publicly owned enterprise &quot;Hortikultura&quot;. However, according to International Union for Conservation of Nature, Germia should be designated as a protected landscape. "
@@ -50,7 +50,7 @@
         android:layout_height="46dp"
         android:layout_marginBottom="20dp"
         android:onClick="liveChat"
-        android:text="@string/live_chat"
+        android:text="@string/read_text"
         app:layout_constraintBottom_toTopOf="@+id/scrollView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.059"

@@ -10,7 +10,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="NEWBORN"
+        android:text="@string/newborn"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Modern sculpture with political meaning "
+        android:text="@string/modern_sculpture_with_political_meaning"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,6 +37,7 @@
         android:id="@+id/imageView2"
         android:layout_width="373dp"
         android:layout_height="256dp"
+        android:contentDescription="@string/newborn1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -61,10 +62,10 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/cathedralTextView"
                 android:layout_width="match_parent"
                 android:layout_height="509dp"
-                android:text="The Newborn Monument is a typographic sculpture and tourist attraction in Pristina, Kosovo. Located in front of the Palace of Youth and Sports, the monument was unveiled on 17 February 2008, the day that Kosovo formally declared its independence from Serbia. The monument consists of the English-language word &quot;Newborn&quot; in capital block letters, which were painted bright yellow when the sculpture was first revealed. The monument was later re-painted with the flags of the states that have recognised Kosovo. At the unveiling of the monument it was announced that it will be painted differently on the anniversary of Kosovo's independence movement day every year. The monument attracted the attention of international media reporting Kosovo's movement declaration of independence, and it was featured prominently on the front page of The New York Times."
+                android:text="@string/the_newborn_monument_is_a_typographic_sculpture_and_tourist_attraction_in_pristina_kosovo_located_in_front_of_the_palace_of_youth_and_sports_the_monument_was_unveiled_on_17_february_2008_the_day_that_kosovo_formally_declared_its_independence_from_serbia_the_monument_consists_of_the_english_language_word_quot_newborn_quot_in_capital_block_letters_which_were_painted_bright_yellow_when_the_sculpture_was_first_revealed_the_monument_was_later_re_painted_with_the_flags_of_the_states_that_have_recognised_kosovo_at_the_unveiling_of_the_monument_it_was_announced_that_it_will_be_painted_differently_on_the_anniversary_of_kosovo_s_independence_movement_day_every_year_the_monument_attracted_the_attention_of_international_media_reporting_kosovo_s_movement_declaration_of_independence_and_it_was_featured_prominently_on_the_front_page_of_the_new_york_times"
                 android:textSize="20sp" />
         </LinearLayout>
     </ScrollView>
@@ -73,8 +74,8 @@
         android:id="@+id/button"
         android:layout_width="124dp"
         android:layout_height="46dp"
-        android:onClick="liveChat"
-        android:text="Live chat"
+        android:onClick="readText"
+        android:text="@string/read_text"
         app:layout_constraintBottom_toTopOf="@+id/scrollView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.059"
@@ -87,7 +88,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="maps"
-        android:text="open in maps"
+        android:text="@string/open_in_maps"
         app:layout_constraintBottom_toTopOf="@+id/scrollView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.903"

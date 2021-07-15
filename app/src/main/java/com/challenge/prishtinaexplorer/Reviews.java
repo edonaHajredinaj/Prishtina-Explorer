@@ -1,13 +1,13 @@
 package com.challenge.prishtinaexplorer;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -20,6 +20,7 @@ public class Reviews extends AppCompatActivity {
     DatabaseReference reference;
     EditText reviewEditText, user;
     TextView reviewTextView;
+    TTS textToSpeech;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,19 +31,22 @@ public class Reviews extends AppCompatActivity {
         reviewEditText = findViewById(R.id.reviewEditText);
         user = findViewById(R.id.username);
         reviewTextView = findViewById(R.id.reviewTextView);
+        textToSpeech = new TTS(this);
     }
 
     public void post(View view) {
         if (!reviewEditText.getText().toString().matches("")) {
             reference.setValue(user.getText().toString() + ": " + reviewEditText.getText().toString());
             Toast.makeText(this, "You are posting a review", Toast.LENGTH_SHORT).show();
+
         }
     }
 
-    public void read (View view){
+    public void read(View view) {
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
+                textToSpeech.speak(reviewTextView.getText().toString() + "\n\n" + snapshot.getValue().toString());
                 reviewTextView.setText(reviewTextView.getText().toString() + "\n\n" + snapshot.getValue().toString());
             }
 
