@@ -10,11 +10,11 @@
       android:id="@+id/postReviewBtn"
       android:layout_width="74dp"
       android:layout_height="46dp"
-      android:layout_marginTop="164dp"
+      android:layout_marginTop="168dp"
       android:onClick="post"
       android:text="@string/post"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.19"
+      app:layout_constraintHorizontal_bias="0.082"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,19 +22,18 @@
       android:id="@+id/readBtn"
       android:layout_width="74dp"
       android:layout_height="46dp"
-      android:layout_marginTop="24dp"
-      android:layout_marginEnd="88dp"
+      android:layout_marginTop="28dp"
       android:onClick="read"
       android:text="@string/read"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.982"
+      app:layout_constraintHorizontal_bias="0.884"
       app:layout_constraintStart_toEndOf="@+id/postReviewBtn"
       app:layout_constraintTop_toBottomOf="@+id/reviewEditText" />
 
   <EditText
       android:id="@+id/reviewEditText"
-      android:layout_width="375dp"
-      android:layout_height="64dp"
+      android:layout_width="376dp"
+      android:layout_height="61dp"
       android:layout_marginTop="64dp"
       android:autofillHints=""
       android:ems="10"
@@ -42,10 +41,10 @@
       android:inputType="textPersonName"
       app:layout_constraintBottom_toTopOf="@+id/postReviewBtn"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.512"
+      app:layout_constraintHorizontal_bias="0.476"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.295" />
+      app:layout_constraintVertical_bias="0.358" />
 
   <EditText
       android:id="@+id/username"
@@ -58,7 +57,7 @@
       android:inputType="textPersonName"
       app:layout_constraintBottom_toTopOf="@+id/reviewEditText"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.578"
+      app:layout_constraintHorizontal_bias="0.491"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
       app:layout_constraintVertical_bias="0.0" />
@@ -92,12 +91,49 @@
       android:id="@+id/textView11"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Click once!"
+      android:text="Read once!"
       app:layout_constraintBottom_toTopOf="@+id/scrollView2"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.704"
+      app:layout_constraintHorizontal_bias="0.907"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/readBtn"
+      app:layout_constraintVertical_bias="0.097" />
+
+  <TextView
+      android:id="@+id/textView6"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="28dp"
+      android:layout_marginTop="4dp"
+      android:text="Post review"
+      app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/postReviewBtn"
       app:layout_constraintVertical_bias="0.0" />
+
+  <Button
+      android:id="@+id/speakBtn"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="28dp"
+      android:onClick="hear"
+      android:text="Speak"
+      app:layout_constraintEnd_toStartOf="@+id/readBtn"
+      app:layout_constraintHorizontal_bias="0.496"
+      app:layout_constraintStart_toEndOf="@+id/postReviewBtn"
+      app:layout_constraintTop_toBottomOf="@+id/reviewEditText" />
+
+  <TextView
+      android:id="@+id/textView13"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="2dp"
+      android:text="Speak your review!"
+      app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+      app:layout_constraintEnd_toStartOf="@+id/textView11"
+      app:layout_constraintHorizontal_bias="0.508"
+      app:layout_constraintStart_toEndOf="@+id/textView6"
+      app:layout_constraintTop_toBottomOf="@+id/speakBtn"
+      app:layout_constraintVertical_bias="0.054" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
